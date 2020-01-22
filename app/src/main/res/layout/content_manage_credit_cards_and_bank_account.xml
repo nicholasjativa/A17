@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zerochass.noble.a17.ManageCreditCardsAndBankAccountActivity"
+    tools:showIn="@layout/activity_manage_credit_cards_and_bank_account">
+
+    <TextView
+        android:id="@+id/tvManageCreditCardsAndBankAccountSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/manage_finance_sources_subtitle" />
+
+    <TextView
+        android:id="@+id/tvFinanceSourcesHeader"
+        android:layout_below="@id/tvManageCreditCardsAndBankAccountSubtitle"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:text="Finance Sources"
+        android:textColor="@color/colorPrimary"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <ListView
+        android:id="@+id/lvFinanceSources"
+        android:layout_below="@id/tvFinanceSourcesHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/list_item_finance_source"/>
+
+
+</RelativeLayout>

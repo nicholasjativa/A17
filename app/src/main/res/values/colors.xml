@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef5350</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorAccent">#e53935</color>
+    <color name="colorExpenseDescription">#212121</color>
+    <color name="colorMonthHeader">#efebe9</color>
+    <color name="colorMonthHeaderText">#757575</color>
+    <color name="colorDayHeader">#d7ccc8</color>
+    <color name="colorMonthFooter">#0d47a1</color>
+    <color name="colorToolbarTitle">#fff</color>
+    <color name="colorFinanceSourceBackground">#7c4dff</color>
+</resources>

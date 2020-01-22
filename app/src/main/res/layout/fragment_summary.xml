@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.zerochass.noble.a17.SummaryFragment">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvChooseDateSummary"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/choose_date_daily_summary"/>
+
+        <EditText
+            android:gravity="center"
+            android:hint="Choose a Date"
+            android:id="@+id/summary_date"
+            android:layout_below="@id/tvChooseDateSummary"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="2dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_summary_header"
+            android:layout_below="@+id/summary_date"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Category"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="2"
+                style="?android:listSeparatorTextViewStyle"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Amount Spent"
+                android:textColor="@color/colorMonthFooter"
+                android:layout_weight="2"
+                style="?android:listSeparatorTextViewStyle"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvSummaryCategories"
+            android:layout_below="@+id/ll_summary_header"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            tools:listitem="@layout/list_item_summary_category_amount"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

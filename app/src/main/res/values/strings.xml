@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">A17</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="add_expense_title">Add An Expense</string>
+    <string name="add_expense_positive_button">Add Expense</string>
+    <string name="edit_expense_title">Edit Existing Expense</string>
+    <string name="edit_expense_positive_button">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="category_hint">Category</string>
+    <string name="description_hint">Description</string>
+    <string name="amount_hint">Amount</string>
+    <string-array name="expense_categories">
+        <item>Clothing</item>
+        <item>Entertainment</item>
+        <item>Food</item>
+        <item>Grocery</item>
+        <item>Hobby</item>
+        <item>Other</item>
+        <item>Personal</item>
+        <item>Travel</item>
+        <item>Work</item>
+    </string-array>
+    <string-array name="bank_names">
+        <item>Capital One</item>
+        <item>Chase</item>
+        <item>Teachers Federal Credit Union</item>
+    </string-array>
+    <string-array name="finance_types">
+        <item>Bank Account</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </string-array>
+    <string name="added_expense_snackbar_msg">Expense Added Successfully</string>
+    <string name="edited_expense_snackbar_msg">Updated Expense Sucessfully</string>
+    <string name="deleted_expense_snackbar_msg">Deleted Expense Successfully</string>
+
+    <string name="title_activity_daily_summary">Daily Summary</string>
+    <string name="title_summary">Summary</string>
+    <string name="title_expenses">Expenses</string>
+
+    <string name="choose_date_daily_summary">Choose a Date to see your Summary and Expenses for that day</string>
+    <string name="title_activity_manage_credit_cards_and_bank_account">
+                Manage Your Finance Sources
+    </string>
+    <string name="manage_finance_sources_subtitle">
+        Here you can manage your financial sources. Add, update, or remove finance sources such as your credit card, debit card, or bank account
+        in order to keep track of your balances.
+    </string>
+
+</resources>

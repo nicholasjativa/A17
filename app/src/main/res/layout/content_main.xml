@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zerochass.noble.a17.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/tvMonthPicker"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Choose a Month"
+        android:textColor="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/lvExpenses"
+        android:layout_above="@id/lvFinanceSourcesMonthBalances"
+        android:layout_below="@+id/tvMonthHeader"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/list_item_expenses"/>
+
+    <ListView
+        android:id="@+id/lvFinanceSourcesMonthBalances"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item_finance_source"/>
+
+</RelativeLayout>

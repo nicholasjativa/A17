@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_expense_list_item_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <TextView
+            android:id="@+id/tvExpenseCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExpenseCategory1"/>
+
+        <TextView
+            android:id="@+id/tvExpenseFinanceSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Some Bank Some Name Credit Card"
+            android:textAlignment="textEnd"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/l_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_1"
+        android:orientation="horizontal"
+        android:paddingHorizontal="3dp">
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/tvExpenseDescription"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Nike Huarache Gray, Nike Dunk Low Blue Black"
+            android:textColor="@color/colorExpenseDescription"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvExpenseAmount"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="$159.00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
